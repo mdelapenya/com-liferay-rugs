@@ -1,1 +1,9 @@
 # com-liferay-rugs
+
+***Congratulations!*** These are the Rug Koans for your own learning journey.
+
+You can now edit/amend or otherwise transmogrify these sources as you work through the Rug Koans.
+
+Your next stop in your journey is to work through the [Rug Koan Editors][rug-koans-editors]...
+
+[rug-koans-editors]: https://github.com/atomist-rugs/rug-koans-editors/blob/master/koans.md

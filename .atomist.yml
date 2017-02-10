@@ -1,0 +1,39 @@
+---
+kind: "operation"
+client: "rug-cli 0.20.0"
+editor:
+  name: "atomist-rugs.travis-editors.EnableTravisForRugArchiveDSL"
+  group: "atomist-rugs"
+  artifact: "travis-editors"
+  version: "0.7.0"
+  origin:
+    repo: "atomist-rugs/travis-editors.git"
+    branch: "d4472b2bb05c009fa7e4c6657654623a5af70c23"
+    sha: "d4472b2"
+  parameters:
+    - "repo_slug": "atomist-rugs/rug-koans-project"
+    - "github_token": "3**************************************c"
+    - "maven_base_url": "https://atomist.jfrog.io/atomist"
+    - "maven_user": "t************h"
+    - "maven_token": "A***********************************************************************i"
+    - "org": ".org"
+
+---
+kind: "operation"
+client: "atomist 1.2"
+generator:
+  name: "NewRugKoansProject"
+  group: "atomist-rugs"
+  artifact: "rug-koans-project"
+  version: "0.6.0"
+  origin:
+    repo: "atomist-rugs/rug-koans-project.git"
+    branch: "86dd309b4a8a548e8f32f7a4567accc5dc04f220"
+    sha: "86dd309"
+  parameters:
+    - "project_name": "com-liferay-rugs"
+    - "artifact_id": "com-liferay-rugs"
+    - "group_id": "sample"
+    - "version": "0.1.0-SNAPSHOT"
+    - "rug_version": "[0.9.0,1.0.0)"
+
