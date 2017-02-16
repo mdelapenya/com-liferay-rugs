@@ -37,3 +37,16 @@ generator:
     - "version": "0.1.0-SNAPSHOT"
     - "rug_version": "[0.9.0,1.0.0)"
 
+---
+kind: "operation"
+client: "rug-cli 0.23.1-SNAPSHOT"
+editor:
+  name: "atomist-rugs.rug-koans-editors.Step1"
+  group: "atomist-rugs"
+  artifact: "rug-koans-editors"
+  version: "0.3.0"
+  origin:
+    repo: "atomist-rugs/rug-koans-editors.git"
+    branch: "2b4bdec80882cd24d472b39f60fe0798f1654dd2"
+    sha: "2b4bdec"
+

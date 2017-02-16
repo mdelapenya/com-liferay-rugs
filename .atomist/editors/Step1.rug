@@ -1,0 +1,18 @@
+/* This is your first Rug! */
+
+/* Start by completing the instructions in the ".atomist/tests/Step1.rt" first if you haven't already */
+
+/* Contemplate the documentation here: http://docs.atomist.com/reference-docs/rug/rug-generators/ */
+
+/* Add an annotation to declare this Rug editor is, in fact, a generator of new projects */
+editor Step1
+
+/* Make sure you delete the comments before the `editor` statement next. */
+
+/* Contemplate the documentation here: http://docs.atomist.com/reference-docs/rug/types/rug-core-types-project/
+ * and then...
+ * Instruct the editor to work with the Project to create a new file called `README.md` in the root of the project with the file's contents being `Hello!`
+*/
+/* Finally...
+ * run `rug test` from your project's root directory and your tests should pass to complete this Koan.
+ */

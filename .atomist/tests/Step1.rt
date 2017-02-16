@@ -1,0 +1,19 @@
+/* Start here for this Koan... */
+
+scenario Step1
+
+/* This is your first Rug test! */
+
+/* Contemplate the documentation here: http://docs.atomist.com/reference-docs/rug/rug-tests/ */
+
+/* Add a given block that uses the current project's ArchiveRoot */
+
+/* Add a when block that executes your Rug */
+
+/* Add a then block that asserts that:
+ * - your project has a README.md file
+ * - the README.md file contains the string "Hello!"
+ * - that a file exists called "staticprojectfile.txt"
+*/ - that the "staticprojectfile.txt" file contains the string "Important Content!"
+
+/* Now jump to ".atomist/editors/Step1.rug" */
