@@ -1,0 +1,12 @@
+scenario ServiceBuilder creates a Liferay Project
+
+let entity_name = "Bar"
+
+given
+    ArchiveRoot
+
+when
+    NewLiferayProject
+
+then
+    fileExists { "src/main/java/" + entity_name + ".java" }
