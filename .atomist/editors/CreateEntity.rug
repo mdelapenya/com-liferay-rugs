@@ -4,10 +4,10 @@ editor CreateEntity
 param entity_name: ^.*$
 param root_package: ^.*$
 
-let className = { "src/main/java/" + root_package.replace(/\./g,'/') + "/" + entity_name + ".java" }
+let filePath = { "src/main/java/" + root_package.replace(/\./g,'/') + "/" + entity_name + ".java" }
 let classContent = { "class " + entity_name + " {}" }
 
 let template = "Entity.vm"
 
 with Project
-	do merge template to className
+	do merge template to filePath
