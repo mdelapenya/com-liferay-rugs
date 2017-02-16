@@ -1,6 +1,7 @@
 scenario ServiceBuilder creates a Liferay Project
 
 let entity_name = "Bar"
+let root_package = "com.liferay.test"
 
 given
     ArchiveRoot
@@ -9,4 +10,4 @@ when
     NewLiferayProject
 
 then
-    fileExists { "src/main/java/" + entity_name + ".java" }
+    fileExists "src/main/java/com/liferay/test/Bar.java"

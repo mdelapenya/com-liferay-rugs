@@ -1,8 +1,11 @@
 scenario ServiceBuilder creates an Entity
 
+let entity_name = "Foo"
+let root_package = "com.liferay.test"
+
 given
     ArchiveRoot
 when
-    CreateEntity entity_name = "Foo"
+    CreateEntity
 then
-    fileExists "src/main/java/Foo.java"
+    fileExists "src/main/java/com/liferay/test/Foo.java"
