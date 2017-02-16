@@ -1,10 +1,10 @@
 @description "Creates a java file for an entity, passed as parameter"
 editor CreateEntity
 
-param entityName: ^.*$
+param entity_name: ^.*$
 
-let className = { "src/main/java/" + entityName + ".java" }
-let classContent = { "class " + entityName + " {}" }
+let className = { "src/main/java/" + entity_name + ".java" }
+let classContent = { "class " + entity_name + " {}" }
 
 let template = "Entity.vm"
 

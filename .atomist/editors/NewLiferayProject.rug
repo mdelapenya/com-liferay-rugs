@@ -24,4 +24,4 @@ param description: @any
 @default "com.liferay"
 param root_package: @java_package
 
-CreateEntity entityName = entity_name
+CreateEntity
