@@ -1,3 +1,4 @@
+@description "Creates an Entity.java file"
 editor CreateEntity
 
 with Project
