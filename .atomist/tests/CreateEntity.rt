@@ -3,6 +3,6 @@ scenario ServiceBuilder creates an Entity
 given
     ArchiveRoot
 when
-    CreateEntity
+    CreateEntity entityName = "Foo"
 then
-    fileContains "Entity.java" "class Entity"
+    fileExists "src/main/java/Foo.java"

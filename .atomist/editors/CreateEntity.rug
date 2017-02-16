@@ -1,5 +1,12 @@
-@description "Creates an Entity.java file"
+@description "Creates a java file for an entity, passed as parameter"
 editor CreateEntity
 
+param entityName: ^.*$
+
+let className = { "src/main/java/" + entityName + ".java" }
+let classContent = { "class " + entityName + " {}" }
+
+let template = "Entity.vm"
+
 with Project
-  do addFile "Entity.java" "class Entity {}"
+	do merge template to className
