@@ -1,4 +1,30 @@
-scenario ServiceBuilder creates an Entity
+scenario ServiceBuilder creates an Entity in root package
+
+let entity_name = "Foo"
+let root_package = ""
+
+given
+    ArchiveRoot
+when
+    CreateEntity
+then
+    fileExists "src/main/java/Foo.java"
+
+###############################################################################
+scenario ServiceBuilder creates an Entity in blank root package
+
+let entity_name = "Foo"
+let root_package = " "
+
+given
+    ArchiveRoot
+when
+    CreateEntity
+then
+    fileExists "src/main/java/Foo.java"
+
+###############################################################################
+scenario ServiceBuilder creates an Entity in a package
 
 let entity_name = "Foo"
 let root_package = "com.liferay.test"
