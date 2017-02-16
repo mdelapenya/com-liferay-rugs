@@ -5,8 +5,6 @@ param entity_name: ^.*$
 param root_package: ^.*$
 
 let filePath = { "src/main/java/" + root_package.replace(/\./g,'/') + "/" + entity_name + ".java" }
-let classContent = { "class " + entity_name + " {}" }
-
 let template = "Entity.vm"
 
 with Project
