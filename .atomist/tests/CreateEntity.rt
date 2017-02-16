@@ -1,0 +1,8 @@
+scenario ServiceBuilder creates an Entity
+
+given
+    ArchiveRoot
+when
+    CreateEntity
+then
+    fileContains "Entity.java" "class Entity"

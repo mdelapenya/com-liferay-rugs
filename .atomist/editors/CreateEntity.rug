@@ -1,0 +1,4 @@
+editor CreateEntity
+
+with Project
+  do addFile "Entity.java" "class Entity {}"
