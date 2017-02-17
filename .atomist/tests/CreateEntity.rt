@@ -10,7 +10,7 @@ when
 then
     fileExists "src/main/java/Foo.java"
 
-###############################################################################
+# -----------------------------------------------------------------------------
 scenario ServiceBuilder creates an Entity in blank root package
 
 let entity_name = "Foo"
@@ -23,7 +23,7 @@ when
 then
     fileExists "src/main/java/Foo.java"
 
-###############################################################################
+# -----------------------------------------------------------------------------
 scenario ServiceBuilder creates an Entity in a package
 
 let entity_name = "Foo"
