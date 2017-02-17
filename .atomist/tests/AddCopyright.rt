@@ -1,0 +1,23 @@
+scenario Java classes needs Copyright
+
+debug = true
+
+given
+    src/main/java/Entity.java = "class Entity {}"
+
+when
+    AddCopyright
+
+then
+    fileCount = 1
+    and fileContains "src/main/java/Entity.java" "/**"
+    and fileContains "src/main/java/Entity.java" "* Copyright (c) 2000-present Liferay, Inc. All rights reserved."
+    and fileContains "src/main/java/Entity.java" "* This library is free software; you can redistribute it and/or modify it under"
+    and fileContains "src/main/java/Entity.java" "* the terms of the GNU Lesser General Public License as published by the Free"
+    and fileContains "src/main/java/Entity.java" "* Software Foundation; either version 2.1 of the License, or (at your option)"
+    and fileContains "src/main/java/Entity.java" "* any later version."
+    and fileContains "src/main/java/Entity.java" "* This library is distributed in the hope that it will be useful, but WITHOUT"
+    and fileContains "src/main/java/Entity.java" "* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS"
+    and fileContains "src/main/java/Entity.java" "* FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more"
+    and fileContains "src/main/java/Entity.java" "details."
+    and fileContains "src/main/java/Entity.java" "*/"
