@@ -17,6 +17,5 @@ let copyright = """
 */
 """
 
-with File f
-	when name contains ".java" and under "src/main/java/"
+with File f when { f.name().contains(".java") } and { f.path().contains("src/main/java") }
 	do prepend copyright
