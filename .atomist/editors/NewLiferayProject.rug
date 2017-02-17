@@ -25,3 +25,4 @@ param description: @any
 param root_package: @java_package
 
 CreateEntity
+AddCopyright
